@@ -9,9 +9,20 @@
 
     .headings {
       display: flex;
-      justify-content: space-between;
-      margin-inline: 40px;
+      align-items: center;
+      justify-content: center;
       height: 20px;
+
+      .button {
+        margin-inline: 5px;
+        border: unset;
+      }
+
+      .button:hover,
+      .button:active,
+      .button:focus {
+        background-color: #d3ecff;
+      }
     }
   }
 

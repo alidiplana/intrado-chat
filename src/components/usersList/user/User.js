@@ -1,11 +1,12 @@
 import { Typography } from "antd";
 import "./user.scss";
 
-const User = () => {
+const User = (props) => {
+  console.log(props.user);
   return (
     <div className="user">
-      <Typography className="heading"> Krishna Epic</Typography>
-      <Typography className="sub-heading">8528897161</Typography>
+      <Typography className="heading"> {props.user.name}</Typography>
+      <Typography className="sub-heading">{props.user.number}</Typography>
     </div>
   );
 };

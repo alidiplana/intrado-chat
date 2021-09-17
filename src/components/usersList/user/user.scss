@@ -1,15 +1,14 @@
 .user {
   .heading {
-    padding: 10px 0 0 5px;
+    padding: 10px 0 0 9px;
     font-family: Roboto;
     font-size: 14px;
     font-weight: bold;
-    //   margin: unset;
     color: #2a2d2e;
   }
 
   .sub-heading {
-    padding: 0 0 10px 5px;
+    padding: 0 0 10px 9px;
     font-family: Roboto;
     font-size: 13px;
     color: #2a2d2e;
@@ -18,7 +17,8 @@
 
 .user:hover,
 .user:focus {
-  background-color: #f6f9f9;
+  background-color: #d3ecff;
+  border-radius: 4px;
   cursor: pointer;
   .heading,
   .sub-heading {

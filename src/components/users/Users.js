@@ -1,4 +1,4 @@
-import { Card, Typography, Input, Button, Divider } from "antd";
+import { Card, Typography, Input, Button, Divider, Radio } from "antd";
 import "antd/dist/antd.css";
 import UsersList from "../usersList/UsersList";
 import "./users.scss";
@@ -9,9 +9,17 @@ const Users = () => {
       <section className="users_left">
         <Card>
           <section className="headings">
-            <Typography>My active</Typography>
-            <Typography>Unclaimed</Typography>
-            <Typography>Other Staff</Typography>
+            <Radio.Group defaultValue="a">
+              <Radio.Button className="button" value="a">
+                My Active
+              </Radio.Button>
+              <Radio.Button className="button" value="b">
+                Unclaimed
+              </Radio.Button>
+              <Radio.Button className="button" value="c">
+                Other Staff
+              </Radio.Button>
+            </Radio.Group>
           </section>
         </Card>
         <Card>

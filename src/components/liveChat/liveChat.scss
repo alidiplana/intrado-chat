@@ -1,0 +1,30 @@
+.card {
+  margin: 20px;
+  .card-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .card-title {
+      margin: unset;
+    }
+
+    .button-group {
+      display: flex;
+      align-items: center;
+
+      .lookup-button {
+        color: #40a9ff;
+        border-color: #40a9ff;
+        border-radius: 5px;
+      }
+
+      .page-button {
+        border-color: #40a9ff;
+        border-radius: 5px;
+        margin-left: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.user {
+  .heading {
+    padding: 10px 0 0 5px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    //   margin: unset;
+    color: #2a2d2e;
+  }
+
+  .sub-heading {
+    padding: 0 0 10px 5px;
+    font-family: Roboto;
+    font-size: 13px;
+    color: #2a2d2e;
+  }
+}
+
+.user:hover,
+.user:focus {
+  background-color: #f6f9f9;
+  cursor: pointer;
+  .heading,
+  .sub-heading {
+    color: #1e9eff;
+  }
+}

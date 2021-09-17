@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  .name {
+    display: flex;
+    align-items: center;
+
+    .live-chat {
+      margin: unset;
+      margin-left: 100px;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .broadcast {
+      margin-inline: 50px;
+      font-family: Roboto;
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+
+  .right {
+    display: flex;
+    gap: 20px;
+
+    .name {
+      .ellipse {
+        border-radius: 50px 50px;
+        width: 7px;
+        height: 7px;
+        margin: 7px 4px 4px 0;
+        background-color: #4ee16b;
+      }
+      .user {
+        font-family: Roboto;
+        font-size: 13px;
+        color: #fff;
+      }
+    }
+
+    .help {
+      display: flex;
+      align-items: center;
+      .help-text {
+        font-family: Roboto;
+        font-size: 13px;
+        color: #fff;
+        margin-left: 5px;
+      }
+    }
+
+    .logout {
+      display: flex;
+      align-items: center;
+      .logout-text {
+        font-family: Roboto;
+        font-size: 13px;
+        color: #fff;
+        margin-left: 5px;
+      }
+    }
+  }
+}

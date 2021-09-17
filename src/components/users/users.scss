@@ -1,0 +1,74 @@
+.users {
+  display: flex;
+  box-sizing: border-box;
+  margin: 20px;
+
+  .users_left {
+    width: 30%;
+    max-width: 400px;
+
+    .headings {
+      display: flex;
+      justify-content: space-between;
+      margin-inline: 40px;
+      height: 20px;
+    }
+  }
+
+  .users_right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+    .card {
+      margin: unset;
+      .users_right-top {
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .users_right-chat {
+      .chat {
+        display: flex;
+        justify-content: flex-end;
+
+        .message-box {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+
+          .message {
+            max-width: 605px;
+            padding: 14px;
+            border-radius: 8px;
+            background-color: #d3ecff;
+          }
+
+          .details {
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+
+            .time {
+              margin-inline: 8px;
+              font-family: Roboto;
+              font-size: 10px;
+              color: #bebfc0;
+            }
+
+            .status {
+              margin-inline: 8px;
+              font-family: Roboto;
+              font-weight: bold;
+              font-size: 10px;
+              color: #00a87e;
+            }
+          }
+        }
+      }
+    }
+  }
+}

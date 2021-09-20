@@ -7,6 +7,9 @@
     width: 30%;
     max-width: 400px;
 
+    .drop-down {
+      display: none;
+    }
     .headings {
       display: flex;
       align-items: center;
@@ -22,6 +25,19 @@
       .button:active,
       .button:focus {
         background-color: #d3ecff;
+      }
+    }
+
+    @media (max-width: 1270px) {
+      .headings {
+        .radio {
+          display: none;
+        }
+        .drop-down {
+          display: block;
+          width: 100%;
+          border: none;
+        }
       }
     }
   }
@@ -43,41 +59,80 @@
 
     .users_right-chat {
       .chat {
+        height: 445px;
         display: flex;
         justify-content: flex-end;
 
         .message-box {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end;
-
-          .message {
-            max-width: 605px;
-            padding: 14px;
-            border-radius: 8px;
-            background-color: #d3ecff;
-          }
-
-          .details {
+          .single-box {
+            margin-top: 20px;
             display: flex;
-            align-items: center;
-            margin-top: 8px;
+            flex-direction: column;
+            align-items: flex-end;
 
-            .time {
-              margin-inline: 8px;
-              font-family: Roboto;
-              font-size: 10px;
-              color: #bebfc0;
+            .message {
+              max-width: 605px;
+              padding: 14px;
+              border-radius: 8px;
+              background-color: #d3ecff;
             }
 
-            .status {
-              margin-inline: 8px;
-              font-family: Roboto;
-              font-weight: bold;
-              font-size: 10px;
-              color: #00a87e;
+            .details {
+              display: flex;
+              align-items: center;
+              margin-top: 8px;
+
+              .time {
+                margin-inline: 8px;
+                font-family: Roboto;
+                font-size: 10px;
+                color: #bebfc0;
+              }
+
+              .status {
+                margin-inline: 8px;
+                font-family: Roboto;
+                font-weight: bold;
+                font-size: 10px;
+                color: #00a87e;
+              }
             }
           }
+        }
+      }
+      .text-typing {
+        display: flex;
+        align-items: center;
+        padding: unset;
+        // justify-content: space-between;
+        .input,
+        .input:focus,
+        .input:active,
+        .input:hover {
+          border: unset;
+        }
+
+        .button {
+          font-family: Roboto;
+          font-size: 14px;
+          font-weight: bold;
+          color: #1e9eff;
+          border: unset;
+
+          .icon {
+            margin-right: 5px;
+            fill: none;
+            stroke: #1e9eff;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 1.5px;
+          }
+        }
+
+        .send-button:focus,
+        .send-button:active,
+        .send-button:hover {
+          cursor: pointer;
         }
       }
     }

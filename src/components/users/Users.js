@@ -15,11 +15,21 @@ import UsersList from "../usersList/UsersList";
 import "./users.scss";
 
 const Users = () => {
+  const users = [
+    { name: "Laurel", number: "8528897161" },
+    { name: "Smith", number: "1528032162" },
+    { name: "Kishan", number: "3528097163" },
+    { name: "Asparia", number: "2520597164" },
+    { name: "John", number: "4528597165" },
+    { name: "Chem", number: "9528897266" },
+    { name: "Alice", number: "3528897166" },
+    { name: "Elliot", number: "3528094806" },
+  ];
+
   const [buttonValue, setButtonValue] = useState("a");
   const [dummyComments, setDummyComments] = useState([
     "Chimney has an appointment on 24/04/202 at 10:34. Please reply 1  to confirm or 2 to cancel.",
   ]);
-
   const [currentMessage, setCurrentMessage] = useState("");
   const [search, setSearch] = useState("");
 
@@ -108,7 +118,11 @@ const Users = () => {
             }
             placeholder="Search"
           />
-          {buttonValue === "a" ? <UsersList search={search} /> : <OtherStuff />}
+          {buttonValue === "a" ? (
+            <UsersList search={search} users={users} />
+          ) : (
+            <OtherStuff />
+          )}
         </Card>
       </section>
       <section className="users_right">
